@@ -1,0 +1,10 @@
+Equalization is a technique used to adjust the color or contrast of an image by redistributing the intensity values of the pixels. In some cases, equalization can lead to visible seams or artifacts at the borders of individual tiles in a tiled image.
+
+Bilinear interpolation is a method used to smooth out these artifacts by estimating pixel values at locations that are between the original pixels. When applied to tiled images, it involves calculating the pixel values along the border between two adjacent tiles by taking into account the intensity values of the neighboring pixels from both tiles.
+
+Bilinear interpolation works by taking a weighted average of the intensity values of four surrounding pixels to calculate the intensity value at a new location. The weight given to each pixel is proportional to its distance from the new location. This process is repeated for each pixel along the border between the two tiles, resulting in a smoothed transition between the two tiles and the removal of any visible artifacts.
+
+Overall, applying bilinear interpolation after equalization is a common technique used in image processing to enhance the visual quality of tiled images by removing visible seams or artifacts in tile borders.
+
+
+
