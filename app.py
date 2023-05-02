@@ -12,10 +12,12 @@ def homepage():
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Processing</title>
+  <title>Enhance X-ray images right here!</title>
 </head>
 <body>
-  <h1>Image Processing</h1>
+  <h1>Enhance X-ray images right here!</h1>
+  <text>Simply upload your image from the device, and click on Process, and see the results on the same window!</text>
+  <br><br>
   <form action="process_image" method="post" enctype="multipart/form-data">
     <input type="file" name="image_file" accept="image/*"><br><br>
     <input type="submit" value="Process">
